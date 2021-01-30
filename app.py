@@ -7,8 +7,6 @@ import pandas as pd
 from sklearn import feature_extraction, linear_model
 
 app = Flask(__name__)
-file = open('disaster_prediction_model.pkl', 'rb')
-model = pickle.load(file)
 
 @app.route('/', methods=['GET'])
 def Home():
